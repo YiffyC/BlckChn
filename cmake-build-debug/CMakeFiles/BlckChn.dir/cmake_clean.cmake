@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "BlckChn.pdb"
   "CMakeFiles/BlckChn.dir/Block.cpp.o"
   "CMakeFiles/BlckChn.dir/Blockchain.cpp.o"
+  "CMakeFiles/BlckChn.dir/Functions.cpp.o"
   "CMakeFiles/BlckChn.dir/main.cpp.o"
   "CMakeFiles/BlckChn.dir/sha256.cpp.o"
   "libBlckChn.dll.a"

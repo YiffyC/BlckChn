@@ -197,6 +197,33 @@ Blockchain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlckChn.dir/build.make CMakeFiles/BlckChn.dir/Blockchain.cpp.s
 .PHONY : Blockchain.cpp.s
 
+Functions.o: Functions.cpp.o
+
+.PHONY : Functions.o
+
+# target to build an object file
+Functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlckChn.dir/build.make CMakeFiles/BlckChn.dir/Functions.cpp.o
+.PHONY : Functions.cpp.o
+
+Functions.i: Functions.cpp.i
+
+.PHONY : Functions.i
+
+# target to preprocess a source file
+Functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlckChn.dir/build.make CMakeFiles/BlckChn.dir/Functions.cpp.i
+.PHONY : Functions.cpp.i
+
+Functions.s: Functions.cpp.s
+
+.PHONY : Functions.s
+
+# target to generate assembly for a file
+Functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlckChn.dir/build.make CMakeFiles/BlckChn.dir/Functions.cpp.s
+.PHONY : Functions.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -266,6 +293,9 @@ help:
 	@echo "... Blockchain.o"
 	@echo "... Blockchain.i"
 	@echo "... Blockchain.s"
+	@echo "... Functions.o"
+	@echo "... Functions.i"
+	@echo "... Functions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

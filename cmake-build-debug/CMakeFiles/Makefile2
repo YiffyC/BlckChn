@@ -94,12 +94,12 @@ clean: CMakeFiles/BlckChn.dir/clean
 CMakeFiles/BlckChn.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlckChn.dir/build.make CMakeFiles/BlckChn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BlckChn.dir/build.make CMakeFiles/BlckChn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target BlckChn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target BlckChn"
 .PHONY : CMakeFiles/BlckChn.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BlckChn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BlckChn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/BlckChn.dir/rule

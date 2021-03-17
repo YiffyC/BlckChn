@@ -9,6 +9,8 @@ CMakeFiles/BlckChn.dir/Blockchain.cpp.o: ../Block.h
 CMakeFiles/BlckChn.dir/Blockchain.cpp.o: ../Blockchain.cpp
 CMakeFiles/BlckChn.dir/Blockchain.cpp.o: ../Blockchain.h
 
+CMakeFiles/BlckChn.dir/Functions.cpp.o: ../Functions.cpp
+
 CMakeFiles/BlckChn.dir/main.cpp.o: ../Block.h
 CMakeFiles/BlckChn.dir/main.cpp.o: ../Blockchain.h
 CMakeFiles/BlckChn.dir/main.cpp.o: ../main.cpp

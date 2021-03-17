@@ -12,10 +12,6 @@ cstdint
 iostream
 -
 
-/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.cpp
-Blockchain.h
-/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.h
-
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.h
 cstdint
 -
@@ -31,6 +27,12 @@ sha256.h
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/sha256.h
 Blockchain.h
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.h
+ctime
+-
+unistd.h
+-
+algorithm
+-
 
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/sha256.h
 string

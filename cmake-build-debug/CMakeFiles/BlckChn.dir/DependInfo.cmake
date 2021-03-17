@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Block.cpp" "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles/BlckChn.dir/Block.cpp.o"
   "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.cpp" "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles/BlckChn.dir/Blockchain.cpp.o"
+  "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Functions.cpp" "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles/BlckChn.dir/Functions.cpp.o"
   "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/main.cpp" "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles/BlckChn.dir/main.cpp.o"
   "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/sha256.cpp" "/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/cmake-build-debug/CMakeFiles/BlckChn.dir/sha256.cpp.o"
   )
