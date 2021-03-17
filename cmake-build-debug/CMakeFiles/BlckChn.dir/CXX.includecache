@@ -20,6 +20,30 @@ vector
 Block.h
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Block.h
 
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/effolkronium/random.hpp
+random
+-
+chrono
+-
+type_traits
+-
+cassert
+-
+initializer_list
+-
+utility
+-
+algorithm
+-
+iterator
+-
+limits
+-
+ostream
+-
+istream
+-
+
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/main.cpp
 iostream
 -
@@ -35,6 +59,12 @@ algorithm
 -
 chrono
 -
+sstream
+-
+random
+-
+effolkronium/random.hpp
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/effolkronium/random.hpp
 
 /cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/sha256.h
 string

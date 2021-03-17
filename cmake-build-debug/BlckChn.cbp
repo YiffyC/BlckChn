@@ -95,6 +95,9 @@
 		<Unit filename="/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Functions.cpp">
 			<Option target="BlckChn"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/effolkronium/Random.hpp">
+			<Option target="BlckChn"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/main.cpp">
 			<Option target="BlckChn"/>
 		</Unit>

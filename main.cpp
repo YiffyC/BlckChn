@@ -5,11 +5,16 @@
 #include <unistd.h>
 #include <algorithm>
 #include <chrono>
+#include <sstream>
+#include <random>
+#include "effolkronium/random.hpp"
 
 using std::string;
 using std::cout;
 using std::endl;
+using Random = effolkronium::random_static;
 
+/* Functions */
 string gen_random_str(const int length) {
     auto randchar = []() -> char
     {
@@ -18,7 +23,7 @@ string gen_random_str(const int length) {
                 "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 "abcdefghijklmnopqrstuvwxyz";
         const size_t max_index = (sizeof(charset) - 1);
-        return charset[ rand() % max_index ];
+        return charset[ Random::get(1,999999999) % max_index ];
     };
     string str(length,0);
     generate_n( str.begin(), length, randchar );
@@ -26,10 +31,18 @@ string gen_random_str(const int length) {
 
 }
 
+
+
+/* end functions */
+
+
 int main(int argc, char *argv[])
 {
     int k = rand()%1;
     Blockchain bChain = Blockchain();
+
+
+
     int nbBlocks =3;
     int i = 1;
     while (i<=nbBlocks)
@@ -41,10 +54,10 @@ int main(int argc, char *argv[])
         cout << "sha256('"<< r << "'):" << rr << endl;
 
         cout << "Mining block "<<i<< "…" << endl;
-        chrono::steady_clock::time_point begin = chrono::steady_clock::now();
+        auto begin = chrono::steady_clock::now();
         bChain.AddBlock(Block(i, rr));
-        chrono::steady_clock::time_point end = chrono::steady_clock::now();
-        cout << "operation time = " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << "[µs]" << std::endl;
+        auto end = chrono::steady_clock::now();
+        cout << "operation time = " << std::chrono::duration_cast<std::chrono::seconds>(end - begin).count() << "[s]" << std::endl;
         i++;
     }
 

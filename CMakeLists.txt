@@ -3,4 +3,4 @@ project(BlckChn)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BlckChn main.cpp Block.h Blockchain.h sha256.h sha256.cpp Block.cpp Blockchain.cpp Functions.cpp)
+add_executable(BlckChn main.cpp Block.h Blockchain.h sha256.h sha256.cpp Block.cpp Blockchain.cpp Functions.cpp effolkronium/Random.hpp)
