@@ -28,7 +28,7 @@ string gen_random_str(const int length) {
 
 int main(int argc, char *argv[])
 {
-
+    int k = rand()%1;
     Blockchain bChain = Blockchain();
     int nbBlocks =3;
     int i = 1;
