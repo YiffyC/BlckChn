@@ -4,6 +4,7 @@
 #include <ctime>
 #include <unistd.h>
 #include <algorithm>
+#include <chrono>
 
 using std::string;
 using std::cout;
@@ -27,32 +28,25 @@ string gen_random_str(const int length) {
 
 int main(int argc, char *argv[])
 {
-    string r = gen_random_str(5);;
-    string rr = sha256(gen_random_str(5));
-    string s = gen_random_str(5);
-    string ss = sha256(gen_random_str(5));
-    string t = gen_random_str(5);
-    string tt = sha256(t);
-
-
-
-
-    cout << "sha256('"<< r << "'):" << rr << endl;
-    cout << "sha256('"<< s << "'):" << ss << endl;
-    cout << "sha256('"<< t << "'):" << tt << endl;
-
-
 
     Blockchain bChain = Blockchain();
+    int nbBlocks =3;
+    int i = 1;
+    while (i<=nbBlocks)
+    {
 
-    cout << "Mining block 1…" << endl;
-    bChain.AddBlock(Block(1, rr));
+        /* block init */
+        string r = gen_random_str(5);
+        string rr = sha256(gen_random_str(5));
+        cout << "sha256('"<< r << "'):" << rr << endl;
 
-    cout << "Mining block 2…" << endl;
-    bChain.AddBlock(Block(2, ss));
-
-    cout << "Mining block 3…" << endl;
-    bChain.AddBlock(Block(3, tt));
+        cout << "Mining block "<<i<< "…" << endl;
+        chrono::steady_clock::time_point begin = chrono::steady_clock::now();
+        bChain.AddBlock(Block(i, rr));
+        chrono::steady_clock::time_point end = chrono::steady_clock::now();
+        cout << "operation time = " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << "[µs]" << std::endl;
+        i++;
+    }
 
 
     return 0;
