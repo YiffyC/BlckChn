@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Block.h
+cstdint
+-
+iostream
+-
+
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.cpp
+Blockchain.h
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.h
+
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.h
+cstdint
+-
+vector
+-
+Block.h
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Block.h
+
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/main.cpp
+iostream
+-
+sha256.h
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/sha256.h
+Blockchain.h
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/Blockchain.h
+
+/cygdrive/c/Users/lxdie/Documents/dev/blckchn/BlckChn/sha256.h
+string
+-
+
