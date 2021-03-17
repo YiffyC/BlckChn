@@ -31,19 +31,17 @@ string gen_random_str(const int length) {
 
 }
 
-
-
 /* end functions */
 
 
 int main(int argc, char *argv[])
 {
-    int k = rand()%1;
+    //blockchain init
     Blockchain bChain = Blockchain();
 
+    //nb Blocks
+    int nbBlocks =10;
 
-
-    int nbBlocks =3;
     int i = 1;
     while (i<=nbBlocks)
     {
