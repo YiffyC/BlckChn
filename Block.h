@@ -17,6 +17,7 @@ public:
     Block(uint32_t nIndexIn, const string &sDataIn);
     string GetHash();
     void MineBlock(uint32_t nDifficulty);
+    void MineBlockOnly(uint32_t nDifficulty);
 
 private:
     uint32_t _nIndex;

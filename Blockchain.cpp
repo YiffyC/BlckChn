@@ -5,9 +5,11 @@ Blockchain::Blockchain()
 
     _vChain.emplace_back(Block(0, "Genesis Block"));
 
-    _nDifficulty = 6;
+    _nDifficulty = 5;
 
 }
+
+
 
 
 void Blockchain::AddBlock(Block bNew) {
@@ -16,6 +18,27 @@ void Blockchain::AddBlock(Block bNew) {
     _vChain.push_back(bNew);
 }
 
+void Blockchain::AddBlockOnly(Block bNew) {
+    bNew.sPrevHash = _GetLastBlock().GetHash();
+    _vChain.push_back(bNew);
+}
+void Blockchain::MineBlock (Block bNew)
+{
+    bNew.MineBlock(_nDifficulty);
+}
+
 Block Blockchain::_GetLastBlock() const {
+
     return _vChain.back();
 }
+
+void Blockchain::display_bckchn(int i)
+{
+    cout << "Block hash : " << _vChain.back().GetHash() << "\n";
+}
+
+Block Blockchain::getBlock(int position)
+{
+    return _vChain.at(position);
+}
+

@@ -15,8 +15,14 @@ class Blockchain
     public:
         Blockchain();
         void AddBlock(Block bNew);
+        void AddBlockOnly(Block bNew);
+        void display_bckchn(int position);
+        void getCurrentMinerdBLock();
+        void MineBlock(Block bNew);
+        Block getBlock(int i);
 
-    private:
+
+private:
         uint32_t _nDifficulty;
         vector<Block> _vChain;
         Block _GetLastBlock() const;
